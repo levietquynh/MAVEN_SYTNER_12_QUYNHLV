@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Sytner" parallel="false">
+
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+<!-- 		<listener class-name="commons.ExtentReportListener" /> -->
+<!-- 		<listener class-name="reportConfig.ReportNGListener" /> -->
+<!-- 		<listener class-name="reportConfig.ExtentTestListener" /> -->
+	</listeners>
+	
+	<test name="Run on Chrome browser">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.sytner.homePage.Jump_Points" />
+		</classes>
+	</test> 
+</suite> 
